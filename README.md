@@ -1,7 +1,7 @@
 # Real-time WebRTC Multi-Object Detection
 
 ### One-Line Goal
-[cite_start]This project is a reproducible demo that performs real-time multi-object detection on a live video streamed from a phone via WebRTC, returns detection bounding boxes to the browser, and overlays them in near real-time[cite: 2].
+This project is a reproducible demo that performs real-time multi-object detection on a live video streamed from a phone via WebRTC, returns detection bounding boxes to the browser, and overlays them in near real-time.
 
 ### Current Project Status
 **Partially Complete:** The application is fully containerized with Docker and the core architecture is in place. The frontend and backend services run, the phone can connect to the laptop over the network, and the "Broadcasting..." status is successfully initiated. The final step of establishing the peer-to-peer WebRTC video stream is currently blocked, preventing the video from appearing on the laptop. The object detection model loading and processing logic is implemented but is currently disabled to debug the video stream.
@@ -59,7 +59,3 @@ Run the convenience script from the root of the project. This will build the Doc
 
 ---
 
-### Troubleshooting
-* [cite_start]**Phone Cannot Connect**: Ensure your phone and laptop are on the **exact same Wi-Fi network**[cite: 91, 92]. If it still fails, temporarily disable your computer's firewall.
-* **Website Not Loading**: Make sure your Docker Desktop application is running before you execute `./start.sh`.
-* **Video Does Not Appear**: This is the current known issue. It is likely caused by a strict firewall or network setting (like AP Isolation on your router) that blocks the peer-to-peer WebRTC connection.
