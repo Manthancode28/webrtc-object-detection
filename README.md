@@ -45,7 +45,7 @@ Run the convenience script from the root of the project. This will build the Doc
 ---
 
 ### Mode Switching
-[cite_start]The application is designed to run in two modes, as required by the task[cite: 5]. You can switch the mode by setting an environment variable before running the start script.
+The application is designed to run in two modes, as required by the task. You can switch the mode by setting an environment variable before running the start script.
 
 * **WASM Mode (Default - Low-Resource):** Runs inference in the browser.
     ```bash
